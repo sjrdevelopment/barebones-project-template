@@ -1,5 +1,5 @@
 # Barebones Project Template
-## Used as a strating point for front end projects (WIP)
+## Used as a starting point for front end projects (WIP)
 
 * Stylus
 * RequireJS (Almond)
