@@ -91,6 +91,19 @@ module.exports = function(grunt) {
         logConcurrentOutput: true
       },
       watch: ['connect', 'watch']
+    },
+    copy: {
+      main: {
+        files: [
+          // includes files within path
+            {
+              expand: true,
+              flatten: true,
+              src: ['src/common/images/*'],
+              dest: 'dist/assets/images/'
+            }
+        ]
+      }
     }
   });
 
@@ -101,6 +114,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-concurrent');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
   grunt.registerTask('default', ['assemble', 'stylus', 'requirejs:compile', 'concurrent:watch']);
