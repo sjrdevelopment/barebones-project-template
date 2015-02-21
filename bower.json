@@ -1,0 +1,16 @@
+{
+  "name": "barebones-project-template",
+  "version": "0.1",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "almond": "~0.3.0",
+    "jquery": "~2.1.3"
+  }
+}
